@@ -76,4 +76,15 @@ describe("parseQuizHtml", () => {
       "Network interface card (NIC)",
     );
   });
+
+  it("keeps CTIA source question numbers and prompt-internal numbered lists", () => {
+    const questions = parseQuizHtml(ctiaSourceHtml);
+    const question = questions.find((item) => item.id === "2050614455");
+
+    expect(question?.prompt).toMatch(
+      /^7\. What is the correct sequence of steps involved in scheduling a threat intelligence program\?/,
+    );
+    expect(question?.prompt).toContain("1. Review the project charter");
+    expect(question?.prompt).toContain("9. Build a work breakdown structure");
+  });
 });

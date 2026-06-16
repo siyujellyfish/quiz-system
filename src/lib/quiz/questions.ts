@@ -3,10 +3,6 @@ import ctiaQuestionsJson from "../../data/ctia-questions.json";
 
 import type { QuizQuestion } from "./types";
 
-export function getQuizQuestions(): QuizQuestion[] {
-  return getCsaV2Questions();
-}
-
 export function getCsaV2Questions(): QuizQuestion[] {
   return validateQuestions(csaV2QuestionsJson);
 }

@@ -39,6 +39,10 @@ import {
 } from "@/lib/quiz/bank-selection";
 import { Button } from "@/components/ui/button";
 import {
+  examPanelClassName,
+  examSidebarClassName,
+} from "@/components/quiz/exam-layout";
+import {
   Card,
   CardContent,
   CardDescription,
@@ -260,7 +264,7 @@ export function QuizApp({ banks, seed }: QuizAppProps) {
       onValueChange={(value) => setActiveMode(value as QuizMode)}
       className="w-full"
     >
-      <div className="flex flex-col gap-3 rounded-lg border border-zinc-300 bg-white p-3 shadow-sm lg:flex-row lg:items-center lg:justify-between">
+      <div className="flex flex-col gap-3 rounded-lg border border-zinc-300 bg-white p-3 shadow-sm dark:border-zinc-700 dark:bg-zinc-900 lg:flex-row lg:items-center lg:justify-between">
         <TabsList className="grid h-auto w-full grid-cols-1 gap-1 sm:w-fit sm:grid-cols-3">
           <TabsTrigger value="practice">練習模式</TabsTrigger>
           <TabsTrigger value="mistakes">錯題模式</TabsTrigger>
@@ -381,14 +385,14 @@ function BankSwitcher({
   return (
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
       <div className="flex min-w-0 items-center gap-3">
-        <div className="rounded-md bg-emerald-100 p-2 text-emerald-700">
+        <div className="rounded-md bg-emerald-100 p-2 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
           <Layers3 className="h-5 w-5" />
         </div>
         <div className="min-w-0">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-zinc-500">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
             {modeLabels[mode]}題庫
           </p>
-          <p className="truncate text-sm font-semibold text-zinc-950">
+          <p className="truncate text-sm font-semibold text-zinc-950 dark:text-zinc-50">
             {selectedBank
               ? `${selectedBank.examType} / ${selectedBank.questions.length} 題`
               : "尚無題庫"}
@@ -402,7 +406,7 @@ function BankSwitcher({
       <div className="relative min-w-0 sm:w-72">
         <select
           id="quiz-bank"
-          className="h-10 w-full appearance-none rounded-md border border-zinc-300 bg-white py-2 pl-3 pr-10 text-sm font-semibold text-zinc-950 shadow-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500"
+          className="h-10 w-full appearance-none rounded-md border border-zinc-300 bg-white py-2 pl-3 pr-10 text-sm font-semibold text-zinc-950 shadow-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-50"
           disabled={banks.length === 0}
           value={selectedBank?.id ?? ""}
           onChange={(event) => onChange(event.target.value)}
@@ -413,7 +417,7 @@ function BankSwitcher({
             </option>
           ))}
         </select>
-        <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" />
+        <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500 dark:text-zinc-400" />
       </div>
     </div>
   );
@@ -441,8 +445,8 @@ function ExamPanel({
   );
 
   return (
-    <Card className="overflow-hidden">
-      <CardHeader className="border-b border-zinc-200 bg-zinc-950 text-white">
+    <Card className={examPanelClassName}>
+      <CardHeader className="rounded-t-lg border-b border-zinc-200 bg-zinc-950 text-white dark:border-zinc-700">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <CardTitle className="flex items-center gap-2 text-2xl">
@@ -467,22 +471,24 @@ function ExamPanel({
             return (
               <div
                 className={cn(
-                  "rounded-lg border border-zinc-200 bg-white p-5",
-                  result && isWrong && "border-red-200 bg-red-50/50",
+                  "rounded-lg border border-zinc-200 bg-white p-5 dark:border-zinc-700 dark:bg-zinc-950",
+                  result &&
+                    isWrong &&
+                    "border-red-200 bg-red-50/50 dark:border-red-900 dark:bg-red-950/30",
                 )}
                 key={question.id}
               >
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+                  <p className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
                     Question {questionIndex + 1}
                   </p>
                   {result && isWrong ? (
-                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700">
+                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700 dark:bg-red-950 dark:text-red-300">
                       錯題
                     </span>
                   ) : null}
                 </div>
-                <h2 className="mt-4 text-base font-bold leading-7">
+                <h2 className="mt-4 whitespace-pre-line text-base font-bold leading-7">
                   {question.prompt}
                 </h2>
                 <div className="mt-4 grid gap-2">
@@ -495,14 +501,14 @@ function ExamPanel({
                     return (
                       <button
                         className={cn(
-                          "rounded-md border border-zinc-300 bg-white px-4 py-3 text-left text-sm leading-6 transition hover:border-emerald-500 hover:bg-emerald-50",
+                          "whitespace-pre-line rounded-md border border-zinc-300 bg-white px-4 py-3 text-left text-sm leading-6 transition hover:border-emerald-500 hover:bg-emerald-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:border-emerald-400 dark:hover:bg-emerald-950/50",
                           isSelected &&
                             !result &&
-                            "border-zinc-950 bg-zinc-100 font-semibold",
+                            "border-zinc-950 bg-zinc-100 font-semibold dark:border-zinc-300 dark:bg-zinc-800",
                           showCorrect &&
-                            "border-emerald-600 bg-emerald-50 font-semibold text-emerald-900",
+                            "border-emerald-600 bg-emerald-50 font-semibold text-emerald-900 dark:border-emerald-400 dark:bg-emerald-950 dark:text-emerald-100",
                           showWrongSelection &&
-                            "border-red-500 bg-red-50 font-semibold text-red-900",
+                            "border-red-500 bg-red-50 font-semibold text-red-900 dark:border-red-400 dark:bg-red-950 dark:text-red-100",
                         )}
                         disabled={Boolean(result)}
                         key={option.id}
@@ -518,7 +524,7 @@ function ExamPanel({
           })}
         </section>
 
-        <aside className="sticky top-6 flex h-fit flex-col gap-5 rounded-lg bg-zinc-100 p-5">
+        <aside className={examSidebarClassName}>
           <div>
             <div className="flex items-center justify-between text-sm font-semibold">
               <span>作答進度</span>
@@ -537,7 +543,7 @@ function ExamPanel({
           </div>
 
           {result ? (
-            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-emerald-950">
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-emerald-950 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-100">
               <p className="text-sm font-semibold">測驗分數</p>
               <p className="mt-2 text-4xl font-black">
                 {result.score}/{result.total}
@@ -609,7 +615,7 @@ function PracticePanel({
 
   return (
     <Card className="overflow-hidden">
-      <CardHeader className="border-b border-zinc-200 bg-zinc-950 text-white">
+      <CardHeader className="border-b border-zinc-200 bg-zinc-950 text-white dark:border-zinc-700">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <CardTitle className="text-2xl">{modeTitle}</CardTitle>
@@ -625,14 +631,14 @@ function PracticePanel({
       <CardContent className="grid gap-6 p-6 lg:grid-cols-[1fr_18rem]">
         <section>
           <div className="flex items-center justify-between gap-3">
-            <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
               Question {currentIndex + 1}
             </p>
-            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800">
+            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
               單選題
             </span>
           </div>
-          <h2 className="mt-5 text-xl font-bold leading-8">
+          <h2 className="mt-5 whitespace-pre-line text-xl font-bold leading-8">
             {question.prompt}
           </h2>
           <div className="mt-6 grid gap-3">
@@ -643,14 +649,14 @@ function PracticePanel({
               return (
                 <button
                   className={cn(
-                    "rounded-md border border-zinc-300 bg-white px-4 py-3 text-left text-sm font-medium leading-6 transition hover:border-emerald-500 hover:bg-emerald-50 disabled:cursor-default",
+                    "whitespace-pre-line rounded-md border border-zinc-300 bg-white px-4 py-3 text-left text-sm font-medium leading-6 transition hover:border-emerald-500 hover:bg-emerald-50 disabled:cursor-default dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:border-emerald-400 dark:hover:bg-emerald-950/50",
                     result &&
                       isCorrect &&
-                      "border-emerald-600 bg-emerald-50 text-emerald-900",
+                      "border-emerald-600 bg-emerald-50 text-emerald-900 dark:border-emerald-400 dark:bg-emerald-950 dark:text-emerald-100",
                     result &&
                       isSelected &&
                       !isCorrect &&
-                      "border-red-500 bg-red-50 text-red-900",
+                      "border-red-500 bg-red-50 text-red-900 dark:border-red-400 dark:bg-red-950 dark:text-red-100",
                   )}
                   disabled={Boolean(result)}
                   key={option.id}
@@ -662,7 +668,7 @@ function PracticePanel({
             })}
           </div>
         </section>
-        <aside className="flex flex-col justify-between gap-6 rounded-lg bg-zinc-100 p-5">
+        <aside className="flex flex-col justify-between gap-6 rounded-lg bg-zinc-100 p-5 dark:bg-zinc-800">
           <div>
             <div className="flex items-center justify-between text-sm font-semibold">
               <span>本輪進度</span>
@@ -676,8 +682,8 @@ function PracticePanel({
                 className={cn(
                   "mt-5 rounded-lg border p-4 text-sm leading-6",
                   result.isCorrect
-                    ? "border-emerald-200 bg-emerald-50 text-emerald-900"
-                    : "border-red-200 bg-red-50 text-red-900",
+                    ? "border-emerald-200 bg-emerald-50 text-emerald-900 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-100"
+                    : "border-red-200 bg-red-50 text-red-900 dark:border-red-900 dark:bg-red-950 dark:text-red-100",
                 )}
               >
                 <div className="flex items-center gap-2 font-bold">
@@ -689,11 +695,13 @@ function PracticePanel({
                   {result.isCorrect ? "答對了" : "答錯了"}
                 </div>
                 {!result.isCorrect && correctOption ? (
-                  <p className="mt-3">正解：{correctOption.text}</p>
+                  <p className="mt-3 whitespace-pre-line">
+                    正解：{correctOption.text}
+                  </p>
                 ) : null}
               </div>
             ) : (
-              <p className="mt-5 text-sm leading-6 text-zinc-600">
+              <p className="mt-5 text-sm leading-6 text-zinc-600 dark:text-zinc-300">
                 選項順序會在本題固定，作答後才顯示正解與下一題按鈕。
               </p>
             )}
@@ -716,17 +724,17 @@ function PracticePanel({
 
 function PracticeStatsSummary({ stats }: { stats: PracticeStats }) {
   return (
-    <div className="mt-4 rounded-lg border border-zinc-200 bg-white p-3 text-sm">
+    <div className="mt-4 rounded-lg border border-zinc-200 bg-white p-3 text-sm dark:border-zinc-700 dark:bg-zinc-900">
       <div className="grid grid-cols-3 gap-2 text-center">
         <StatPill label="正確" value={stats.correctCount} tone="correct" />
         <StatPill label="錯誤" value={stats.incorrectCount} tone="incorrect" />
         <StatPill label="未作答" value={stats.unansweredCount} tone="muted" />
       </div>
-      <div className="mt-3 flex items-center justify-between border-t border-zinc-200 pt-3 font-semibold">
-        <span className="text-zinc-600">正確率</span>
-        <span className="text-zinc-950">
+      <div className="mt-3 flex items-center justify-between border-t border-zinc-200 pt-3 font-semibold dark:border-zinc-700">
+        <span className="text-zinc-600 dark:text-zinc-300">正確率</span>
+        <span className="text-zinc-950 dark:text-zinc-50">
           {stats.accuracy}%
-          <span className="ml-2 text-xs font-medium text-zinc-500">
+          <span className="ml-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">
             ({stats.correctCount}/{stats.answeredCount})
           </span>
         </span>
@@ -748,9 +756,12 @@ function StatPill({
     <div
       className={cn(
         "rounded-md border px-2 py-2",
-        tone === "correct" && "border-emerald-200 bg-emerald-50 text-emerald-900",
-        tone === "incorrect" && "border-red-200 bg-red-50 text-red-900",
-        tone === "muted" && "border-zinc-200 bg-zinc-50 text-zinc-700",
+        tone === "correct" &&
+          "border-emerald-200 bg-emerald-50 text-emerald-900 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-100",
+        tone === "incorrect" &&
+          "border-red-200 bg-red-50 text-red-900 dark:border-red-900 dark:bg-red-950 dark:text-red-100",
+        tone === "muted" &&
+          "border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200",
       )}
     >
       <p className="text-xs font-semibold">{label}</p>
@@ -773,12 +784,12 @@ function EmptyMode({
   return (
     <Card>
       <CardContent className="flex min-h-72 flex-col items-center justify-center gap-4 p-8 text-center">
-        <div className="rounded-lg bg-emerald-100 p-3 text-emerald-700">
+        <div className="rounded-lg bg-emerald-100 p-3 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
           {icon}
         </div>
         <div>
           <h2 className="text-2xl font-black">{title}</h2>
-          <p className="mt-2 max-w-md text-sm leading-6 text-zinc-600">
+          <p className="mt-2 max-w-md text-sm leading-6 text-zinc-600 dark:text-zinc-300">
             {description}
           </p>
         </div>

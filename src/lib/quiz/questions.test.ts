@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import {
   getCsaV2Questions,
   getCtiaQuestions,
-  getQuizQuestions,
   validateQuestions,
 } from "./questions";
 
@@ -22,22 +21,32 @@ describe("quiz question loader", () => {
     }
   });
 
-  it("keeps the legacy quiz question loader mapped to CSA v2", () => {
-    expect(getQuizQuestions()).toHaveLength(100);
-  });
-
   it("loads validated CTIA questions with unique IDs and one correct option", () => {
     const questions = getCtiaQuestions();
 
     expect(questions).toHaveLength(88);
     expect(new Set(questions.map((question) => question.id)).size).toBe(88);
+    expect(questions[0]?.prompt).toMatch(
+      /^A team of threat intelligence analysts/,
+    );
 
     for (const question of questions) {
+      expect(question.prompt).not.toMatch(/^\d+[.)、．）]\s/);
       expect(question.options).toHaveLength(4);
       expect(question.options.filter((option) => option.isCorrect)).toHaveLength(
         1,
       );
     }
+
+    const numberedListQuestion = questions.find(
+      (question) => question.id === "2050614455",
+    );
+    expect(numberedListQuestion?.prompt).toContain(
+      "1. Review the project charter",
+    );
+    expect(numberedListQuestion?.prompt).toContain(
+      "9. Build a work breakdown structure",
+    );
   });
 
   it("rejects duplicate question IDs", () => {

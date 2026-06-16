@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeInitScript } from "@/components/theme/theme-init-script";
 import { productCopy } from "@/lib/quiz/product-copy";
 import "./globals.css";
 
@@ -13,8 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-Hant">
-      <body>{children}</body>
+    <html lang="zh-Hant" suppressHydrationWarning>
+      <body>
+        <ThemeInitScript />
+        {children}
+      </body>
     </html>
   );
 }
