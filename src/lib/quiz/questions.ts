@@ -1,5 +1,6 @@
 import csaV2QuestionsJson from "../../data/csa-v2-questions.json";
 import ctiaQuestionsJson from "../../data/ctia-questions.json";
+import edrpQuestionsJson from "../../data/edrp-questions.json";
 
 import type { QuizQuestion } from "./types";
 
@@ -9,6 +10,10 @@ export function getCsaV2Questions(): QuizQuestion[] {
 
 export function getCtiaQuestions(): QuizQuestion[] {
   return validateQuestions(ctiaQuestionsJson);
+}
+
+export function getEdrpQuestions(): QuizQuestion[] {
+  return validateQuestions(edrpQuestionsJson);
 }
 
 export function validateQuestions(value: unknown): QuizQuestion[] {

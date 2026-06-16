@@ -30,7 +30,7 @@ describe("question banks", () => {
   it("loads the default CSA v2 bank from all validated questions", () => {
     const banks = getQuizBanks();
 
-    expect(banks).toHaveLength(2);
+    expect(banks).toHaveLength(3);
     expect(banks.find((bank) => bank.id === "csa-v2-all")).toMatchObject({
       id: "csa-v2-all",
       title: "CSA v2 全題庫",
@@ -51,6 +51,20 @@ describe("question banks", () => {
     });
     expect(banks.find((bank) => bank.id === "ctia-all")?.questions).toHaveLength(
       88,
+    );
+  });
+
+  it("loads the EDRP bank from validated EDRP questions", () => {
+    const banks = getQuizBanks();
+
+    expect(banks.find((bank) => bank.id === "edrp-all")).toMatchObject({
+      id: "edrp-all",
+      title: "EDRP 全題庫",
+      examType: "EDRP",
+      description: "從 EDRP 題庫整理的 153 題單選題。",
+    });
+    expect(banks.find((bank) => bank.id === "edrp-all")?.questions).toHaveLength(
+      153,
     );
   });
 

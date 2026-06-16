@@ -1,4 +1,8 @@
-import { getCsaV2Questions, getCtiaQuestions } from "./questions";
+import {
+  getCsaV2Questions,
+  getCtiaQuestions,
+  getEdrpQuestions,
+} from "./questions";
 import type {
   QuizBank,
   QuizBankDefinition,
@@ -18,12 +22,19 @@ const bankDefinitions: QuizBankDefinition[] = [
     examType: "CTIA",
     description: "從 CTIA 全題庫測驗匯出整理的 88 題單選題。",
   },
+  {
+    id: "edrp-all",
+    title: "EDRP 全題庫",
+    examType: "EDRP",
+    description: "從 EDRP 題庫整理的 153 題單選題。",
+  },
 ];
 
 export function getQuizBanks(): QuizBank[] {
   return [
     resolveQuestionBank(bankDefinitions[0], getCsaV2Questions()),
     resolveQuestionBank(bankDefinitions[1], getCtiaQuestions()),
+    resolveQuestionBank(bankDefinitions[2], getEdrpQuestions()),
   ];
 }
 

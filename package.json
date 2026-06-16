@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "convert:edrp": "node --experimental-strip-types scripts/convert-edrp-questions.mts",
     "extract:questions": "node --experimental-strip-types scripts/extract-questions.mts",
     "test": "vitest run",
     "start": "next start",

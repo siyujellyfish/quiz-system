@@ -1,0 +1,2142 @@
+[{
+    "n": 1,
+    "q": "ABC Inc. has a host of servers, each serving a different purpose. Almost all are critical. Most servers were virtualized with backup virtual components. When one server's memory crashed mid-day, operations were unaffected as it switched to backup virtual memory. What is such a feature called?",
+    "opts": {
+        "A": "Deduplication",
+        "B": "High Availability",
+        "C": "Fault Tolerance",
+        "D": "Mirroring"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "自動切換到備援、零中斷 = Fault Tolerance。HA 容許短暫中斷，FT 是無縫切換。"
+},
+{
+    "n": 2,
+    "q": "Zoe's site crashed under high traffic. She bought two more servers and distributed the load across three servers to maximize efficiency. Which solution did she use?",
+    "opts": {
+        "A": "Load Balancing",
+        "B": "High-Availability",
+        "C": "Point in Time Recovery",
+        "D": "Clustering"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "分散流量負載 = Load Balancing。"
+},
+{
+    "n": 3,
+    "q": "Which of the following services provides mail and calendar services?",
+    "opts": {
+        "A": "Web Server",
+        "B": "Application Server",
+        "C": "Domain Controller",
+        "D": "Exchange Server"
+    },
+    "pdf": "B",
+    "correct": "D",
+    "changed": true,
+    "note": "⚠️ PDF標B錯誤。郵件與行事曆服務 = Microsoft Exchange Server。Application Server 與此無關。"
+},
+{
+    "n": 4,
+    "q": "Seth wants an approximate picture of risk likelihood (earthquake unlikely, fire high, intrusion partly controlled by guards) to prioritize mitigation. What kind of risk assessment is Seth conducting?",
+    "opts": {
+        "A": "Semi-Quantitative Risk Assessment",
+        "B": "Quantitative Risk Assessment",
+        "C": "Qualitative Risk Assessment",
+        "D": "Semi-Qualitative Risk Assessment"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "用 high/low 等級描述但帶近似程度判斷 = Semi-Qualitative。"
+},
+{
+    "n": 5,
+    "q": "Which term defines the assessment of risk factors and the relationship between these factors?",
+    "opts": {
+        "A": "Risk Models",
+        "B": "Risk Mitigation",
+        "C": "Risk Management",
+        "D": "Risk Assessment"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "風險因子及其關係 = Risk Models。"
+},
+{
+    "n": 6,
+    "q": "Richard backs up daily at 8pm. Fire at 9am destroyed servers. Transfer from alternate site takes 8 hours. Based on last backup, recovery time is 'minus 13 hours'. What term defines this 13-hour period?",
+    "opts": {
+        "A": "Recovery Point Objective (RPO)",
+        "B": "Recovery Time Objective (RTO)",
+        "C": "Single Point of Failure (SPOF)",
+        "D": "Maximum Acceptable Outage (MAO)"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "資料遺失量(回到上次備份點)= RPO。"
+},
+{
+    "n": 7,
+    "q": "Jess wants to implement the standard for societal security in the business continuity management system. Which standard should she implement?",
+    "opts": {
+        "A": "NFPA 1600",
+        "B": "ISO 27005",
+        "C": "ISO 27031",
+        "D": "ISO 22301"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "BCMS 社會安全標準 = ISO 22301。"
+},
+{
+    "n": 8,
+    "q": "John wants the alternate site to run in parallel to the primary, allowing near-immediate continuity. Which site is best suited?",
+    "opts": {
+        "A": "Hot Site",
+        "B": "Warm Site",
+        "C": "Colocation Facilities",
+        "D": "Cold Site"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "平行運作、立即接手 = Hot Site。"
+},
+{
+    "n": 9,
+    "q": "Katie implemented the RAID level that splits data into blocks and writes evenly across drives but provides no redundancy. This RAID requires a minimum of ___ drives.",
+    "opts": {
+        "A": "Three drives",
+        "B": "Six drives",
+        "C": "Two drives",
+        "D": "Four drives"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "RAID 0 striping，最少 2 顆。"
+},
+{
+    "n": 10,
+    "q": "Jill wants an analysis to decide if her food truck business would be profitable in monetary terms. Which analysis was she advised to conduct?",
+    "opts": {
+        "A": "Cost Benefit Analysis",
+        "B": "Cost Analysis",
+        "C": "Business Impact Analysis",
+        "D": "Risk Analysis"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "評估投資是否有利可圖 = Cost Benefit Analysis。"
+},
+{
+    "n": 11,
+    "q": "XYZ.com (London) lost a hosting server. Admins solved slowness by routing traffic to the alternate server in Mumbai. What term best describes this?",
+    "opts": {
+        "A": "High-Availability",
+        "B": "Global Load Balancing",
+        "C": "Failover",
+        "D": "Network Load Balancing"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "跨地理位置(倫敦→孟買)分流 = Global Load Balancing。"
+},
+{
+    "n": 12,
+    "q": "Which technology is used to create a copy of data on one server on another server?",
+    "opts": {
+        "A": "Data Replication",
+        "B": "Snapshots",
+        "C": "Cloud Storage",
+        "D": "Failover Cluster"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "伺服器間複製資料 = Data Replication。"
+},
+{
+    "n": 13,
+    "q": "Which team is responsible for the implementation and execution of the disaster recovery plan, including test plans?",
+    "opts": {
+        "A": "Operations Team",
+        "B": "Planning Team",
+        "C": "Technology Team",
+        "D": "Support Team"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "執行 DRP 與測試計畫 = Operations Team。"
+},
+{
+    "n": 14,
+    "q": "Many choose this backup method to protect against site-specific problems; location can be a home office or a disaster-hardened bunker. Which backup method?",
+    "opts": {
+        "A": "Near-line",
+        "B": "Offsite",
+        "C": "Onsite",
+        "D": "Online"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "異地存放備份媒體 = Offsite。"
+},
+{
+    "n": 15,
+    "q": "Nancy needs RAID with parity stored across multiple drives, reconstruction during downtime, good speed, and not expensive. Which RAID level?",
+    "opts": {
+        "A": "RAID 1",
+        "B": "RAID 3",
+        "C": "RAID 10",
+        "D": "RAID 0"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "專屬同位元(dedicated parity)、成本低 = RAID 3。"
+},
+{
+    "n": 16,
+    "q": "James set aside $20,000 emergency fund for a virtual-connection DR service. What is this emergency fund called?",
+    "opts": {
+        "A": "Risk Adjusted Return on Capital (RAROC)",
+        "B": "Risk Adjusted Return on Risk Adjusted Capital (RARORAC)",
+        "C": "Risk Adjusted Performance Management (RAPM)",
+        "D": "Return on Risk Adjusted Capital (RORAC)"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "EDRP官方標RAROC(風險調整後的資本準備)。"
+},
+{
+    "n": 17,
+    "q": "Which is NOT a component of a centralized governance structure for Business Continuity and Risk Management?",
+    "opts": {
+        "A": "Programs and Practices",
+        "B": "Enablement",
+        "C": "Effectiveness",
+        "D": "Authenticity"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "治理結構三要素為 Programs/Practices、Enablement、Effectiveness。Authenticity 不屬於。"
+},
+{
+    "n": 18,
+    "q": "Amy mimicked a real-life disaster, testing software, communication, procedures and personnel. Which test?",
+    "opts": {
+        "A": "Walkthrough Testing",
+        "B": "Parallel Testing",
+        "C": "Full Interruption Testing",
+        "D": "Simulation Testing"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "模擬真實災難情境但不真正中斷營運 = Simulation Testing。"
+},
+{
+    "n": 19,
+    "q": "Which standard on disaster/emergency management & BC programs defines disasters and covers prevention, mitigation, preparedness, response, continuity, and recovery?",
+    "opts": {
+        "A": "NFPA 1600",
+        "B": "INCITS 483-2012",
+        "C": "ISO 27031",
+        "D": "ISO 27005"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "NFPA 1600 是緊急/災害管理與BC的美國標準。"
+},
+{
+    "n": 20,
+    "q": "Which server category stores host account info and implements security policies in its domain?",
+    "opts": {
+        "A": "Global Catalog Servers",
+        "B": "Domain Controller Servers",
+        "C": "File Servers",
+        "D": "IIS Servers"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "管理帳戶與網域安全政策 = Domain Controller。"
+},
+{
+    "n": 21,
+    "q": "Timothy implements a dedicated network for sharing storage resources, separating storage units from servers/user network. He uses a ___.",
+    "opts": {
+        "A": "SCSA",
+        "B": "NAS",
+        "C": "SAN",
+        "D": "SAS"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "專用儲存網路、區塊級 = SAN。"
+},
+{
+    "n": 22,
+    "q": "Jack on Hyper-V wants a snapshot backup instead of full backup of VMs. Which native Hyper-V Manager feature?",
+    "opts": {
+        "A": "Checkpoint Backup",
+        "B": "Hyper-V Replication",
+        "C": "System Backup",
+        "D": "Snapshots Backup"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "EDRP官方標 Snapshots Backup(新版Hyper-V稱Checkpoint，但題庫答案為D)。"
+},
+{
+    "n": 23,
+    "q": "Which term refers to the individual skills required to ensure achievement of terminal objectives?",
+    "opts": {
+        "A": "Enabling Objectives",
+        "B": "Routine Objectives",
+        "C": "Qualitative Objectives",
+        "D": "Development Objectives"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "達成終端目標所需的個別技能 = Enabling Objectives。"
+},
+{
+    "n": 24,
+    "q": "Matt created several logical servers on one physical server. Which technology?",
+    "opts": {
+        "A": "Deduplication",
+        "B": "Snapshot",
+        "C": "Virtualization",
+        "D": "Mirroring"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "一台實體切多台邏輯伺服器 = Virtualization。"
+},
+{
+    "n": 25,
+    "q": "Will sets up a pair of RAID disks so all data written to one is auto-copied to the other. Which RAID level?",
+    "opts": {
+        "A": "RAID 5",
+        "B": "RAID 1",
+        "C": "RAID 0",
+        "D": "RAID 3"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "鏡像 = RAID 1。"
+},
+{
+    "n": 26,
+    "q": "Zane finds one server's Active Directory missing; all other domain servers have AD intact. Which restoration process?",
+    "opts": {
+        "A": "Authoritative Active Directory Restoration",
+        "B": "Non-Authoritative Active Directory Restoration",
+        "C": "Data Replication",
+        "D": "Server Migration"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "其他DC正常，靠複寫還原 = Non-Authoritative Restoration。"
+},
+{
+    "n": 27,
+    "q": "Which strategy is NOT part of risk response?",
+    "opts": {
+        "A": "Sharing",
+        "B": "Safety",
+        "C": "Mitigation",
+        "D": "Acceptance"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "風險回應策略為 Avoid/Mitigate/Transfer(Share)/Accept。Safety 不是。"
+},
+{
+    "n": 28,
+    "q": "Cameron's software created a copy of data using block level imaging. Which software/method?",
+    "opts": {
+        "A": "Bare-metal Restore",
+        "B": "Disk Imaging",
+        "C": "Virtualization",
+        "D": "Cloud Backup"
+    },
+    "pdf": "C",
+    "correct": "B",
+    "changed": true,
+    "note": "⚠️ PDF標C(Virtualization)錯誤。題目明寫 block level imaging = Disk Imaging。"
+},
+{
+    "n": 29,
+    "q": "Which refers to a central command and control facility responsible for recovery actions, coordinating response/resources, ensuring coherence of operations?",
+    "opts": {
+        "A": "Emergency Operations Center",
+        "B": "Colocation Facilities",
+        "C": "Mobile Recovery Center",
+        "D": "Crisis Command Center"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "中央指揮控制設施 = Emergency Operations Center。"
+},
+{
+    "n": 30,
+    "q": "Annabeth (web-hosting, no downtime affordable) opted for live replication at the backup site for immediate switchover. Which backup site?",
+    "opts": {
+        "A": "Hot Sites",
+        "B": "Warm Sites",
+        "C": "Colocation Facilities",
+        "D": "Cold Sites"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "即時複寫、立即接手 = Hot Site。"
+},
+{
+    "n": 31,
+    "q": "Fred wants a plan of well-planned actions before, during, and after a catastrophic event. Which plan?",
+    "opts": {
+        "A": "Risk Assessment",
+        "B": "Business Recovery Plan",
+        "C": "Data Backup Plan",
+        "D": "IT Disaster Recovery Plan"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "災前/中/後的IT行動 = IT Disaster Recovery Plan。"
+},
+{
+    "n": 32,
+    "q": "Which technique verifies data is safe, secure, and readable after update, restore, or retrieve?",
+    "opts": {
+        "A": "Database Integrity Testing",
+        "B": "Backup Integrity Testing",
+        "C": "Database Authentication",
+        "D": "Database Consolidation"
+    },
+    "pdf": "D",
+    "correct": "A",
+    "changed": true,
+    "note": "⚠️ PDF標D(Consolidation,整併)錯誤。驗證資料在更新/還原/取回後完整可讀 = Database Integrity Testing。"
+},
+{
+    "n": 33,
+    "q": "In which test is the entire BCP implemented?",
+    "opts": {
+        "A": "Orientation Test",
+        "B": "Functional Test",
+        "C": "Simulation Test",
+        "D": "Full-Scale Test"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "完整實施整個BCP = Full-Scale Test。"
+},
+{
+    "n": 34,
+    "q": "ABC Bank distributes client data chunks across global centers; a % deviation between actual and targeted data should not exist. Which recovery metric defines this % deviation?",
+    "opts": {
+        "A": "Recovery Service Resiliency (RSR)",
+        "B": "Recovery Object Granularity (ROG)",
+        "C": "Recovery Consistency Objective (RCO)",
+        "D": "Recovery Location Scope (RLS)"
+    },
+    "pdf": "D",
+    "correct": "C",
+    "changed": true,
+    "note": "⚠️ PDF標D錯誤。實際與目標資料的偏差百分比(一致性) = Recovery Consistency Objective(RCO)。RLS 是地點範圍，與偏差%無關。"
+},
+{
+    "n": 35,
+    "q": "Jonathan classified risks as Very Low/Low/Medium/High/Very High. Which assessment method?",
+    "opts": {
+        "A": "Semi-Qualitative Risk Assessment",
+        "B": "Quantitative Risk Assessment",
+        "C": "Semi-Quantitative Risk Assessment",
+        "D": "Qualitative Risk Assessment"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "純等級描述、無數值 = Qualitative。"
+},
+{
+    "n": 36,
+    "q": "Which term refers to systems that maintain data and access despite malicious/accidental problems with storage servers, networks, clients, and accounts?",
+    "opts": {
+        "A": "Survivable Storage System",
+        "B": "Decentralized Computing",
+        "C": "Mainframe Computer System",
+        "D": "Mirroring"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "面對攻擊/故障仍可存取 = Survivable Storage System。"
+},
+{
+    "n": 37,
+    "q": "Kelly backs up only files created/modified after the last backup. What type?",
+    "opts": {
+        "A": "Normal backup",
+        "B": "Full backup",
+        "C": "Differential Backup",
+        "D": "Incremental backup"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "自上次任何備份後的變更 = Incremental。"
+},
+{
+    "n": 38,
+    "q": "Which term refers to a set of tasks organizations must continue throughout or resume rapidly after a disruptive incident?",
+    "opts": {
+        "A": "Business Impact Analysis",
+        "B": "Maximum Allowed Downtime (MAD)",
+        "C": "Mission Essential Functions (MEF)",
+        "D": "Risk Mitigation"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "EDRP官方標 BIA(此題官方答案為A，雖然MEF更貼近字面定義，但題庫答案為A)。"
+},
+{
+    "n": 39,
+    "q": "Jack rents a server in the same data center his friend uses; cheaper, provides cooling. Which backup site?",
+    "opts": {
+        "A": "Colocation Facilities",
+        "B": "Hot Sites",
+        "C": "Cold Sites",
+        "D": "Warm Sites"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "共用資料中心、租用機位 = Colocation。"
+},
+{
+    "n": 40,
+    "q": "Rachel wants a DR tier that backs up data over a WAN connection. Which tier?",
+    "opts": {
+        "A": "Tier 0",
+        "B": "Tier 6",
+        "C": "Tier 5",
+        "D": "Tier 3"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "透過WAN備份(電子保險庫) = Tier 3。"
+},
+{
+    "n": 41,
+    "q": "Which method keeps the SYSVOL folder synchronized across multiple servers in the same domain?",
+    "opts": {
+        "A": "Failover",
+        "B": "Distributed File System Replication",
+        "C": "Data Backup",
+        "D": "Load Balancing"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "SYSVOL 同步 = DFS Replication (DFSR)。"
+},
+{
+    "n": 42,
+    "q": "Lisa wants to cut cost of many idle dedicated servers, optimize resources, save cooling energy. Which solution?",
+    "opts": {
+        "A": "Operating System Virtualization",
+        "B": "Server Replication",
+        "C": "Virtual Desktop Infrastructure",
+        "D": "Server Virtualization"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "整併多台伺服器降成本 = Server Virtualization。"
+},
+{
+    "n": 43,
+    "q": "Rick interconnected individual computers and removed the central server to balance load. Which architecture?",
+    "opts": {
+        "A": "Three Tier",
+        "B": "N-Tier",
+        "C": "Peer-to-Peer",
+        "D": "Client-Server"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "去中心、電腦互連分攤 = Peer-to-Peer。"
+},
+{
+    "n": 44,
+    "q": "Which term refers to a storage system of HDDs that looks and acts like a physical tape library?",
+    "opts": {
+        "A": "Disk-to-Disk (D2D)",
+        "B": "Virtual Tape Library (VTL)",
+        "C": "Mirroring",
+        "D": "Snapshot"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "硬碟模擬磁帶櫃 = VTL。"
+},
+{
+    "n": 45,
+    "q": "Which is NOT an advantage of colocation facilities?",
+    "opts": {
+        "A": "Backup",
+        "B": "Cooling",
+        "C": "Economic Advantages",
+        "D": "Recovery of Servers"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "Colocation 不提供伺服器復原服務。"
+},
+{
+    "n": 46,
+    "q": "IT dept copies data changes from original to replica DB server annually (DB updated once/year). Which solution?",
+    "opts": {
+        "A": "Transactional Replication",
+        "B": "SQL Server Replication",
+        "C": "Merge Replication",
+        "D": "Snapshot Replication"
+    },
+    "pdf": "C",
+    "correct": "D",
+    "changed": true,
+    "note": "⚠️ PDF標C(Merge)錯誤。低頻率、整批複製當下快照 = Snapshot Replication。Merge是雙向合併變更，不符年度單向複製情境。"
+},
+{
+    "n": 47,
+    "q": "Match the RAID components with their functions (1-iii etc.). [配對表PDF未印出選項內容]",
+    "opts": {
+        "A": "1-iii,2-v,3-i,4-iv",
+        "B": "1-ii,2-i,3-iv,4-iii",
+        "C": "1-iv,2-iii,3-v,4-ii",
+        "D": "1-v,2-iv,3-ii,4-ii"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "⚠️ 配對對照表(i~v)PDF未提供，無法獨立驗證，沿用官方答案B。"
+},
+{
+    "n": 48,
+    "q": "Joan's DR test had team members confirm effectiveness, bottlenecks, weaknesses in the plan. Which test?",
+    "opts": {
+        "A": "Parallel Testing",
+        "B": "Walkthrough Testing",
+        "C": "Simulation Testing",
+        "D": "Full Interruption Testing"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "團隊逐步檢視找弱點 = Walkthrough Testing。"
+},
+{
+    "n": 49,
+    "q": "When information availability increases in PASIS architecture, which feature decreases?",
+    "opts": {
+        "A": "Confidentiality",
+        "B": "Durability",
+        "C": "Nonrepudiation",
+        "D": "Latency"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "PASIS 中可用性↑則機密性↓(分散副本越多越易洩)。"
+},
+{
+    "n": 50,
+    "q": "XYZ Inc. transfers critical data to backup site via an FTP server. Which term best describes this?",
+    "opts": {
+        "A": "Electronic Vaulting",
+        "B": "Disk Shadowing",
+        "C": "Disk Duplexing",
+        "D": "Manually copying the data files and transferring them to the remote site"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "電子化批次傳送到異地保險庫 = Electronic Vaulting。"
+},
+{
+    "n": 51,
+    "q": "Which term refers to the ease with which technicians can resolve or replace failing components/systems?",
+    "opts": {
+        "A": "Robustness",
+        "B": "Redundancy",
+        "C": "Reparability",
+        "D": "Recoverability"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "易於修復/更換 = Reparability。"
+},
+{
+    "n": 52,
+    "q": "Jack set up BCP training for employees with small roles, covering framework/processes/strategies. What is this training?",
+    "opts": {
+        "A": "Scenario Training",
+        "B": "Detailed Awareness Training",
+        "C": "Simulation Training",
+        "D": "Introductory Awareness Training"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "角色輕、概觀介紹 = Introductory Awareness Training。"
+},
+{
+    "n": 53,
+    "q": "Jonah's laptop creates a new backup daily, each taking more space than the previous. Which backup type?",
+    "opts": {
+        "A": "Differential Backup",
+        "B": "Online Data Backup",
+        "C": "Full System Backup",
+        "D": "Incremental Backup"
+    },
+    "pdf": "D",
+    "correct": "A",
+    "changed": true,
+    "note": "⚠️ PDF標D錯誤。每天備份且容量逐日遞增=自上次完整備份後累積變更 = Differential Backup。Incremental每次只備變更，容量不會持續變大。"
+},
+{
+    "n": 54,
+    "q": "Jonas took measures to avoid/minimize cyclone damage before it hit. Under which classification?",
+    "opts": {
+        "A": "Backup",
+        "B": "Recovery",
+        "C": "Prevention",
+        "D": "Resumption"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "事前避免/減損 = Prevention。"
+},
+{
+    "n": 55,
+    "q": "Which DR test is very expensive and disrupts normal business operations?",
+    "opts": {
+        "A": "Checklist Testing",
+        "B": "Full Interruption Testing",
+        "C": "Simulation Testing",
+        "D": "Parallel Testing"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "真正中斷營運、最貴 = Full Interruption Testing。"
+},
+{
+    "n": 56,
+    "q": "Gloria's BCP audit stage ascertained whether operational resiliency/continuity was encouraged and if BCP was over/underfunded. Which audit stage?",
+    "opts": {
+        "A": "Management of Process Changes",
+        "B": "Overall Testing of the Plan",
+        "C": "Ongoing Program Management",
+        "D": "Overall Program Governance"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "資金與整體治理 = Overall Program Governance。"
+},
+{
+    "n": 57,
+    "q": "Emma's scenario training phase: participants informed in advance about training. Which phase?",
+    "opts": {
+        "A": "Planning Phase",
+        "B": "Warning Phase",
+        "C": "Execution Phase",
+        "D": "Review Phase"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "事前通知參與者 = Warning Phase。"
+},
+{
+    "n": 58,
+    "q": "Which term measures the severity of the impact of a risk on a business?",
+    "opts": {
+        "A": "Frequency",
+        "B": "Recovery Time",
+        "C": "Recovery Scale",
+        "D": "Assessment Scale"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "EDRP官方標 Assessment Scale。"
+},
+{
+    "n": 59,
+    "q": "Alan backs up 3-4 articles daily; backup time = downtime, wants it quick. Which backup suits?",
+    "opts": {
+        "A": "Differential Backup",
+        "B": "Incremental Backup",
+        "C": "Full System Backup",
+        "D": "Online Data Backup"
+    },
+    "pdf": "A",
+    "correct": "B",
+    "changed": true,
+    "note": "⚠️ PDF標A錯誤。每日少量、要最快/最省時 = Incremental Backup(只備當天3-4篇變更)。Differential會越備越久。"
+},
+{
+    "n": 60,
+    "q": "Which term refers to the system's ability to correctly serve the requests it receives?",
+    "opts": {
+        "A": "Nonrepudiation",
+        "B": "Availability",
+        "C": "Precaution",
+        "D": "Integrity"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "正確服務請求的能力 = Availability。"
+},
+{
+    "n": 61,
+    "q": "George identifies risks (phishing, earthquakes, server crash, electrical surges) and must prioritize per an InfoSec risk management standard. Which standard?",
+    "opts": {
+        "A": "ISO 27001",
+        "B": "ISO/IEC 27005",
+        "C": "INCITS 483-2012",
+        "D": "ISO 27031"
+    },
+    "pdf": "D",
+    "correct": "B",
+    "changed": true,
+    "note": "⚠️ PDF標D(ISO 27031是ICT就緒)疑誤。資訊安全『風險管理』標準 = ISO/IEC 27005。題目明指 information security risk management。建議改B。(註:部分EDRP題庫標D，存在爭議，以官方ISO定義B較正確)"
+},
+{
+    "n": 62,
+    "q": "Phil's VM crashed during experiment; he had a method taking backups at intervals giving an architectural instance of last saved VM. Which method?",
+    "opts": {
+        "A": "Disk-to-Disk (D2D)",
+        "B": "Snapshot",
+        "C": "Continuous Data Protection (CDP)",
+        "D": "Mirroring"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "VM定期存點、還原到上次架構狀態 = Snapshot。"
+},
+{
+    "n": 63,
+    "q": "Standard providing a framework to identify/specify all aspects for improving ICT readiness for business continuity. Which standard?",
+    "opts": {
+        "A": "INCITS 483-2012",
+        "B": "ISO 27005",
+        "C": "ISO 27031",
+        "D": "ISO 22313"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "ICT readiness for business continuity = ISO 27031。"
+},
+{
+    "n": 64,
+    "q": "Phoebe's DR test cases need at least 90% to pass for success. What is this scenario known as?",
+    "opts": {
+        "A": "Software Testing Lifecycle",
+        "B": "Suspension Criteria",
+        "C": "Exit Criteria",
+        "D": "Entry Criteria"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "通過門檻(完成標準) = Exit Criteria。"
+},
+{
+    "n": 65,
+    "q": "Name of the shared directory in Microsoft Server OS containing copy of commonly shared/replicated public files of a domain?",
+    "opts": {
+        "A": "Public Files",
+        "B": "ADFS",
+        "C": "inetpub",
+        "D": "SYSVOL"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "網域公用共享複寫目錄 = SYSVOL。"
+},
+{
+    "n": 66,
+    "q": "Using which Windows 10 feature can users preserve system state including system files, installed apps, and settings?",
+    "opts": {
+        "A": "System Backup",
+        "B": "System Update",
+        "C": "Failover replication",
+        "D": "System Restore"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "保存系統狀態/還原點 = System Restore。"
+},
+{
+    "n": 67,
+    "q": "Which cluster provides consistent file system images across servers, allowing simultaneous read/write to a single shared file system?",
+    "opts": {
+        "A": "High-Performance Clusters",
+        "B": "Storage Cluster",
+        "C": "Failover Cluster",
+        "D": "High-Availability Clusters"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "共享檔案系統同時讀寫 = Storage Cluster。"
+},
+{
+    "n": 68,
+    "q": "In PASIS, after implementation critical data was only accessible to authorized employees. Which PASIS feature?",
+    "opts": {
+        "A": "Reaction",
+        "B": "Confidentiality",
+        "C": "Availability",
+        "D": "Maintenance"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "僅授權者可存取 = Confidentiality。"
+},
+{
+    "n": 69,
+    "q": "Jonathan used a DR component containing a pictorial representation of all DR processes. Which DR component?",
+    "opts": {
+        "A": "Exclusions",
+        "B": "Activation Procedures",
+        "C": "System Description",
+        "D": "Scope Statement"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "流程圖示說明 = System Description。"
+},
+{
+    "n": 70,
+    "q": "Which term refers to a high-speed data transmission technique providing access to consolidated block-level storage?",
+    "opts": {
+        "A": "Network Attached Storage (NAS)",
+        "B": "Storage Area Network (SAN)",
+        "C": "Cloud Storage",
+        "D": "Storage Virtualization"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "高速、區塊級整合儲存 = SAN。"
+},
+{
+    "n": 71,
+    "q": "Which term refers to storage tech used to capture real-time data changes and facilitate restore points and recovery?",
+    "opts": {
+        "A": "Mirroring",
+        "B": "Disk-to-Disk (D2D)",
+        "C": "Virtual Tape Library (VTL)",
+        "D": "Continuous Data Protection (CDP)"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "即時捕捉變更、連續還原點 = CDP。"
+},
+{
+    "n": 72,
+    "q": "Archie tested the BCP by mobilizing the resources. Which test?",
+    "opts": {
+        "A": "Functional Test",
+        "B": "Simulation Test",
+        "C": "Checklist Test",
+        "D": "Orientation Test"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "實際動員資源 = Functional Test。"
+},
+{
+    "n": 73,
+    "q": "Joanna's software backs up/restores/recovers DB files using database server sessions. Which software?",
+    "opts": {
+        "A": "Disk Drill",
+        "B": "RMAN",
+        "C": "Recuva",
+        "D": "Virtuozzo"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "Oracle Recovery Manager = RMAN。"
+},
+{
+    "n": 74,
+    "q": "Which term refers to the recommencement of business functions as systems are gradually made available after a disaster?",
+    "opts": {
+        "A": "Resume",
+        "B": "Recover",
+        "C": "Reduce",
+        "D": "Return"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "逐步恢復營運 = Resume。"
+},
+{
+    "n": 75,
+    "q": "Jake's plan identifies all personnel accountable for research, development, and implementation of the DRP. Which plan?",
+    "opts": {
+        "A": "Disaster Recovery Plan",
+        "B": "Disaster Management Plan",
+        "C": "Business Continuity Plan",
+        "D": "IT Recovery Plan"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "指派人員職責 = Disaster Management Plan。"
+},
+{
+    "n": 76,
+    "q": "Tom wants centralized storage with free data backup on the server, efficient backup/recovery. Which storage tech?",
+    "opts": {
+        "A": "PAS",
+        "B": "RAID",
+        "C": "NAS",
+        "D": "DAS"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "集中式檔案級網路儲存 = NAS。"
+},
+{
+    "n": 77,
+    "q": "Where can the VM Management Service be located in the Hyper-V architecture?",
+    "opts": {
+        "A": "Parent Partition",
+        "B": "Child Partition",
+        "C": "Windows Kernel",
+        "D": "Hypervisor Layer"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "VMMS 位於 Parent Partition。"
+},
+{
+    "n": 78,
+    "q": "Which sub-team assigns research and carries out development/implementation of the DRP throughout the organization?",
+    "opts": {
+        "A": "Disaster Management Team Chairpersons",
+        "B": "Disaster Management Team Coordinators",
+        "C": "Disaster Management Team",
+        "D": "Disaster Management Executive Committee"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "EDRP官方標 Chairpersons。"
+},
+{
+    "n": 79,
+    "q": "Fred's site inaccessible; hosting files on server corrupted. Which server must he restore?",
+    "opts": {
+        "A": "Catalog Server",
+        "B": "IIS Server",
+        "C": "Application Server",
+        "D": "Database Server"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "網站託管 = IIS Server。"
+},
+{
+    "n": 80,
+    "q": "Which term refers to a programming pattern where computers are clustered in a distributed and parallel fashion?",
+    "opts": {
+        "A": "Decentralized Computing",
+        "B": "Cloud Computing",
+        "C": "Grid Computing",
+        "D": "Centralized Computing"
+    },
+    "pdf": "A",
+    "correct": "C",
+    "changed": true,
+    "note": "⚠️ PDF標A錯誤。分散且平行叢集運算 = Grid Computing。Decentralized是架構概念，Grid才是『分散+平行叢集』的標準定義。(註:此題EDRP官方答案存爭議，依字面定義改C)"
+},
+{
+    "n": 81,
+    "q": "Which term refers to a backup taken when the database is offline?",
+    "opts": {
+        "A": "Full System Backup",
+        "B": "Hot Backup",
+        "C": "Online Data Backup",
+        "D": "Cold Backup"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "DB離線時備份 = Cold Backup。"
+},
+{
+    "n": 82,
+    "q": "James (PASIS) recovered data from earthquake-destroyed storage nodes. Which PASIS feature allowed recovery?",
+    "opts": {
+        "A": "Integrity",
+        "B": "Availability",
+        "C": "Reaction",
+        "D": "Durability"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "節點毀損仍能還原 = Durability。"
+},
+{
+    "n": 83,
+    "q": "Company wants a backup method that encrypts data, accessible anytime/anywhere. Which method?",
+    "opts": {
+        "A": "Cloud Backup",
+        "B": "Hot Site Backup",
+        "C": "Offsite Backup",
+        "D": "Onsite Backup"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "加密+隨時隨地存取 = Cloud Backup。"
+},
+{
+    "n": 84,
+    "q": "Fred installed generator, mail malware/spam protection, and 8-hr backup to mitigate two risks. Which process did Fred go through?",
+    "opts": {
+        "A": "Risk Mitigation",
+        "B": "Risk Assessment",
+        "C": "Risk Management",
+        "D": "Risk Identification"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "實際採取控制措施降風險 = Risk Mitigation。"
+},
+{
+    "n": 85,
+    "q": "Which term measures the number of applications/data sets handled by the recovery solution and max data size it can store?",
+    "opts": {
+        "A": "Recovery Location Scope (RLS)",
+        "B": "Recovery Service Resiliency (RSR)",
+        "C": "Recovery Point Objective (RPO)",
+        "D": "Recovery Service Scalability (RSS)"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "處理量與容量規模 = Recovery Service Scalability。"
+},
+{
+    "n": 86,
+    "q": "Which components does PASIS architecture integrate?",
+    "opts": {
+        "A": "Centralized Computing, Data Redundancy and Encoding",
+        "B": "Centralized Storage Systems, Deduplication and Mirroring",
+        "C": "Decentralized Storage Systems, Data Redundancy and Encoding, and Dynamic Self-Maintenance",
+        "D": "Distributed Computing, Data Redundancy and Encoding, and Dynamic Self-Maintenance"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "PASIS = 去中心儲存+冗餘編碼+動態自我維護。"
+},
+{
+    "n": 87,
+    "q": "Which term refers to the ability to restore data and applications should data centers/servers/infrastructure get damaged by a disaster?",
+    "opts": {
+        "A": "Recovery Management",
+        "B": "Disaster Recovery",
+        "C": "Data Recovery",
+        "D": "Application Recovery"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "災後還原資料與應用 = Disaster Recovery。"
+},
+{
+    "n": 88,
+    "q": "Betting site: payment gateway down >1hr loses $100k+15%; might lose 25% permanently. Unacceptable, fixed immediately. What term defines this two-hour period?",
+    "opts": {
+        "A": "Recovery Point Objective (RPO)",
+        "B": "Work Recovery Time (WRT)",
+        "C": "Maximum Tolerable Period of Disruption (MTPOD)",
+        "D": "Recovery Time Objective (RTO)"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "絕對不可超過的最大中斷時間 = MTPOD。"
+},
+{
+    "n": 89,
+    "q": "Jane wants a standard guiding establishment/implementation/maintenance of a formal documented BIA process. Which standard?",
+    "opts": {
+        "A": "ISO/IEC 27031",
+        "B": "ISO/TS 22317",
+        "C": "ISO/IEC 27005",
+        "D": "AS/NZS 5050"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "BIA 程序專用標準 = ISO/TS 22317。"
+},
+{
+    "n": 90,
+    "q": "Which term refers to a virtualized data storage and processing facility provided as a service?",
+    "opts": {
+        "A": "Cloud-based Storage",
+        "B": "Software Defined Data Center",
+        "C": "Virtual Machines",
+        "D": "Data Virtualization"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "虛擬化的資料中心即服務 = Software Defined Data Center。"
+},
+{
+    "n": 91,
+    "q": "Which term refers to a dedicated server also used for file storage and sharing?",
+    "opts": {
+        "A": "Network Attached Storage (NAS)",
+        "B": "Data Virtualization",
+        "C": "Storage Area Network (SAN)",
+        "D": "Cloud Storage"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "專用檔案儲存共享伺服器 = NAS。(PDF此處格式黏到Q92，已分離)"
+},
+{
+    "n": 92,
+    "q": "Martin wants to back up Cisco Router config to an FTP server. Which Cisco IOS CLI command?",
+    "opts": {
+        "A": "#copy running configuration tftp",
+        "B": "#backup running configuration ftp",
+        "C": "#backup running configuration ftp",
+        "D": "#copy running configuration ftp"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "copy running-config 到 ftp = copy ... ftp。"
+},
+{
+    "n": 93,
+    "q": "Jason notices slow VM data transmission due to poor VMQ handling from NIC restrictions. What should he do?",
+    "opts": {
+        "A": "Improve the performance of the network storage",
+        "B": "None of these",
+        "C": "Increase the bandwidth of the network connection",
+        "D": "Update the NIC driver"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "VMQ/NIC問題 = 更新NIC驅動。"
+},
+{
+    "n": 94,
+    "q": "Remy invested $15,000; 15% fail chance rising to 35% after fire-safety inspection. Which method of evaluating risk?",
+    "opts": {
+        "A": "Risk Valuation",
+        "B": "Risk Adjusted Return On Capital (RAROC)",
+        "C": "Value at Risk",
+        "D": "Return on Risk Adjusted Capital (RORAC)"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "以機率估算潛在損失 = Value at Risk。"
+},
+{
+    "n": 95,
+    "q": "Which term refers to repairing the old site or setting up a new alternate site to resume operations after a disaster?",
+    "opts": {
+        "A": "Restoration",
+        "B": "Business Continuity",
+        "C": "Resumption",
+        "D": "Response"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "修復原址/建新址 = Restoration。"
+},
+{
+    "n": 96,
+    "q": "Lily's archiving method provides tools/software, easy access/cataloging, but recurring cooling & maintenance costs. Which archiving method?",
+    "opts": {
+        "A": "Cloud-Based Archiving",
+        "B": "Legacy Archiving",
+        "C": "Optical Media Storage",
+        "D": "On Premise Disk Based Archiving"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "本地、有冷卻維護經常性成本 = On-Premise Disk Based Archiving。"
+},
+{
+    "n": 97,
+    "q": "Hospital ER needs zero-minute downtime; secondary server takes over automatically the second primary goes down (coordinated). Which solution?",
+    "opts": {
+        "A": "Point in Time Recovery",
+        "B": "Database Replication",
+        "C": "Failover",
+        "D": "Deduplication"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "自動接管 = Failover。"
+},
+{
+    "n": 98,
+    "q": "Which term refers to a client-server architecture merged with layered architecture?",
+    "opts": {
+        "A": "Client-Server Architecture",
+        "B": "Application Server-Tier Architecture",
+        "C": "Tightly Coupled Architecture",
+        "D": "N-Tier Architecture"
+    },
+    "pdf": "C",
+    "correct": "D",
+    "changed": true,
+    "note": "⚠️ PDF標C錯誤。Client-server + 分層 = N-Tier Architecture。Tightly Coupled與分層架構無關。"
+},
+{
+    "n": 99,
+    "q": "Which term refers to the potential gain from the best alternative forgone when choosing between mutually exclusive alternatives?",
+    "opts": {
+        "A": "Cost Benefit Analysis",
+        "B": "Fixed Cost",
+        "C": "Business Impact Analysis",
+        "D": "Opportunity Cost"
+    },
+    "pdf": "A",
+    "correct": "D",
+    "changed": true,
+    "note": "⚠️ PDF標A錯誤。放棄的最佳替代方案之潛在收益 = Opportunity Cost(機會成本)的標準定義。"
+},
+{
+    "n": 100,
+    "q": "Jack updated macOS to a buggy beta; wants to restore to previous OS version. Which MacBook feature?",
+    "opts": {
+        "A": "Time Shift",
+        "B": "Image Recovery",
+        "C": "Snapshot",
+        "D": "Time Machine"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "macOS 備份還原 = Time Machine。"
+},
+{
+    "n": 101,
+    "q": "Which is a feature of mainframe computers?",
+    "opts": {
+        "A": "Pluralism",
+        "B": "Proven Reliability",
+        "C": "Openness",
+        "D": "Transparency"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "大型主機特性 = Proven Reliability。"
+},
+{
+    "n": 102,
+    "q": "Which term refers to backing up files modified/changed/added since the last full backup?",
+    "opts": {
+        "A": "Differential Backup",
+        "B": "Online Data Backup",
+        "C": "Incremental Backup",
+        "D": "Full System Backup"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "自上次『完整』備份後變更 = Differential。"
+},
+{
+    "n": 103,
+    "q": "Which term refers to evaluation of potential interruptions in a department's working due to failure of their internal systems?",
+    "opts": {
+        "A": "Team wide BIA",
+        "B": "Branch-wide BIA",
+        "C": "Organization-wide BIA",
+        "D": "Country-wide BIA"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "單一部門/分支層級 = Branch-wide BIA。"
+},
+{
+    "n": 104,
+    "q": "John wants RAID requiring minimum six drives for high fault tolerance and high read/write speed. Which RAID level?",
+    "opts": {
+        "A": "RAID level 10",
+        "B": "RAID level 5",
+        "C": "RAID level 50",
+        "D": "RAID level 1"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "最少6顆、高容錯+高速 = RAID 50。"
+},
+{
+    "n": 105,
+    "q": "Which term refers to determining the potential impact of disruptive events on an organization's business processes?",
+    "opts": {
+        "A": "Risk Assessment",
+        "B": "Business Impact Analysis",
+        "C": "Risk Management",
+        "D": "Vulnerability Assessment"
+    },
+    "pdf": "D",
+    "correct": "B",
+    "changed": true,
+    "note": "⚠️ PDF標D錯誤。判斷干擾事件對業務流程的潛在衝擊 = Business Impact Analysis(BIA)的定義。"
+},
+{
+    "n": 106,
+    "q": "Which term refers to third-party services like recovery infrastructure, real-time remote backup, and offsite replication?",
+    "opts": {
+        "A": "Continuous Data Protection",
+        "B": "Managed Disaster Recovery",
+        "C": "Tape Vaulting",
+        "D": "Disk Shadowing"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "第三方代管DR = Managed Disaster Recovery。"
+},
+{
+    "n": 107,
+    "q": "Which training is meant for employees who have an important execution role in the BCP, provided framework/processes/strategies?",
+    "opts": {
+        "A": "Detailed Awareness Training",
+        "B": "Introductory Awareness Training",
+        "C": "Scenario Training",
+        "D": "Simulation Training"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "重要執行角色、深入 = Detailed Awareness Training。"
+},
+{
+    "n": 108,
+    "q": "Mike needs to install a feature in Windows Server 2012 to enable backup/restore of a file server. Which feature via which app?",
+    "opts": {
+        "A": "Windows Server Backup, Administrative Tools",
+        "B": "Server Migration, Microsoft Management Console",
+        "C": "Windows Server Backup, Microsoft Management Console",
+        "D": "Server Migration, Administrative Tools"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "Windows Server Backup 功能，經 MMC 安裝。"
+},
+{
+    "n": 109,
+    "q": "Which term refers to training milestones that must be achieved to meet the BC training program's aim?",
+    "opts": {
+        "A": "Routine Objectives",
+        "B": "Development Objectives",
+        "C": "Time-Related Objectives",
+        "D": "Terminal Objectives"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "訓練最終里程碑 = Terminal Objectives。"
+},
+{
+    "n": 110,
+    "q": "Which DR tier makes use of point in time copies?",
+    "opts": {
+        "A": "Tier 8",
+        "B": "Tier 5",
+        "C": "Tier 0",
+        "D": "Tier 4"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "時間點副本 = Tier 4。"
+},
+{
+    "n": 111,
+    "q": "Polly estimates magnitude of damage if new product specs leaked (could lose $200k+, > upgrade cost, so upgrades). Which risk factor did she estimate?",
+    "opts": {
+        "A": "Likelihood",
+        "B": "Vulnerability",
+        "C": "Impact",
+        "D": "Hazard"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "估算損害量級 = Impact。"
+},
+{
+    "n": 112,
+    "q": "Which term refers to the blueprint that calls out the tactics dictating how continuity and recovery from a disaster will be achieved?",
+    "opts": {
+        "A": "Business Continuity Plan",
+        "B": "Business Continuity Strategy",
+        "C": "Business Continuity Management",
+        "D": "Crisis Management"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "戰術藍圖 = Business Continuity Strategy。"
+},
+{
+    "n": 113,
+    "q": "Sam (Ubuntu) accidentally deleted official project files but had a backup. Which native Ubuntu option to recover?",
+    "opts": {
+        "A": "Shadow Copy",
+        "B": "Snapshots",
+        "C": "Déjà Dup",
+        "D": "Checkpoints"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "Ubuntu 內建備份工具 = Déjà Dup。"
+},
+{
+    "n": 114,
+    "q": "Which option must be considered by an organization when conducting BIA?",
+    "opts": {
+        "A": "Transferring a business activity to a third-party",
+        "B": "Time scales for assessment",
+        "C": "Establishing alternate processes or creating redundancy/spare capacity in processes",
+        "D": "Ceasing or changing a business activity if viable alternatives are available"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "EDRP官方標 C(建立備援/冗餘流程)。"
+},
+{
+    "n": 115,
+    "q": "Phil's DR tier provided automated recovery of data and applications. Which DR tier?",
+    "opts": {
+        "A": "Tier 2",
+        "B": "Tier 4",
+        "C": "Tier 8",
+        "D": "Tier 7"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "全自動化還原 = Tier 7。"
+},
+{
+    "n": 116,
+    "q": "Which is NOT an objective of business impact analysis?",
+    "opts": {
+        "A": "Identify RTO and RPO for Each Process",
+        "B": "Assess the Impact Caused by a Threat",
+        "C": "Identify the Critical Resources Required by the Business",
+        "D": "Establish the Recovery Order of the Critical Business Functions"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "EDRP官方標 D(建立復原順序非BIA本身目標)。"
+},
+{
+    "n": 117,
+    "q": "XYZ messaging app: secondary server can only take load for 4 hours; primary must be up within 4 hours. What term defines this 4-hour period?",
+    "opts": {
+        "A": "Recovery Time Objective (RTO)",
+        "B": "Recovery Point Objective (RPO)",
+        "C": "Maximum Tolerable Downtime (MTD)",
+        "D": "Work Recovery Time (WRT)"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "系統須在X時間內恢復 = RTO。"
+},
+{
+    "n": 118,
+    "q": "Which term refers to bringing a system's application and data back to a previous state in a prescribed, acceptable time frame?",
+    "opts": {
+        "A": "System Migration",
+        "B": "System Replication",
+        "C": "System Backup",
+        "D": "System Recovery"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "還原到先前狀態 = System Recovery。"
+},
+{
+    "n": 119,
+    "q": "Vulnerability assessment steps: (a) assess impact (b) estimate probability (c) assess resources to mitigate (d) list threats. Correct order?",
+    "opts": {
+        "A": "b, d, c, a",
+        "B": "b, c, d, a",
+        "C": "d, b, a, c",
+        "D": "c, a, d, b"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "先列威脅d→估機率b→評衝擊a→評資源c。"
+},
+{
+    "n": 120,
+    "q": "Oliver's team's proposal leaked to competitor; lost project, morale dropped, other projects delayed for 2 months. Which impact best describes this?",
+    "opts": {
+        "A": "Quantitative Impact",
+        "B": "Qualitative Impact",
+        "C": "Semi-Qualitative Impact",
+        "D": "Industrial Impact"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "EDRP官方標 C(混合可量化財損與士氣等非量化) = Semi-Qualitative。"
+},
+{
+    "n": 121,
+    "q": "The internal audit of the BCP takes place to ensure conformance to which standard?",
+    "opts": {
+        "A": "ISO 22313",
+        "B": "ISO/IEC 27031:2011",
+        "C": "ISO 22301:2012",
+        "D": "ISO/IEC 27005:2011"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "BCMS 認證稽核標準 = ISO 22301:2012。"
+},
+{
+    "n": 122,
+    "q": "Matt (stock brokering, real-time updates) cannot have downtime to back up. Which backup technique?",
+    "opts": {
+        "A": "Incremental Backup",
+        "B": "Online Data Backup",
+        "C": "Cold Backup",
+        "D": "Hot Backup"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "DB線上運行中備份 = Hot Backup。"
+},
+{
+    "n": 123,
+    "q": "Jack connected computers/servers into a single unified computing resource, protecting against application/server/software/site failures. Which solution?",
+    "opts": {
+        "A": "Mirroring",
+        "B": "Deduplication",
+        "C": "Server Clustering",
+        "D": "Failover"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "整合成單一運算資源、多重防護 = Server Clustering。"
+},
+{
+    "n": 124,
+    "q": "Which term refers to a graphical representation of data protection services designed to balance overall cost of data protection against loss?",
+    "opts": {
+        "A": "3DR",
+        "B": "Continuous Data Protection",
+        "C": "Data Backup",
+        "D": "Data Protection Continuum"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "資料保護成本平衡光譜圖 = Data Protection Continuum。"
+},
+{
+    "n": 125,
+    "q": "Which term refers to utilizing a full backup of a file then modifying it with one or more incremental backups?",
+    "opts": {
+        "A": "Incremental Forever Backup",
+        "B": "Differential Backup",
+        "C": "Incremental Backup",
+        "D": "Synthetic Backup"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "完整備份+增量合成 = Synthetic Backup。"
+},
+{
+    "n": 126,
+    "q": "Roger's test simulated a specific event scenario in which the BCP would be tested. Which test?",
+    "opts": {
+        "A": "Checklist Test",
+        "B": "Orientation Test",
+        "C": "Simulation Test",
+        "D": "Tabletop Test"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "EDRP官方標 Tabletop Test(桌上推演特定情境)。"
+},
+{
+    "n": 127,
+    "q": "Joan's server slowed under traffic spike eating memory; she added extra virtual memory to smooth it. What is such a feature called?",
+    "opts": {
+        "A": "Monotonicity",
+        "B": "Transparency",
+        "C": "Openness",
+        "D": "Scalability"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "按需擴充資源 = Scalability。"
+},
+{
+    "n": 128,
+    "q": "Which cluster uses mounted file systems to read and write data?",
+    "opts": {
+        "A": "Failover Cluster",
+        "B": "Storage Cluster",
+        "C": "High-Availability Cluster",
+        "D": "High-Performance Clusters"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "EDRP官方標 High-Availability Cluster。"
+},
+{
+    "n": 129,
+    "q": "Which three components define the three-tier architecture in decentralized computing?",
+    "opts": {
+        "A": "Client, Peer-to-Peer, and Application",
+        "B": "Application, Peer-to-Peer, and Tightly Coupled",
+        "C": "Client, Application Server, and Database Server",
+        "D": "Tightly Coupled, Client, and Peer-to-Peer"
+    },
+    "pdf": "A",
+    "correct": "C",
+    "changed": true,
+    "note": "⚠️ PDF標A錯誤。三層式架構 = Client(展示層)+Application Server(邏輯層)+Database Server(資料層)。選項A的Peer-to-Peer不屬於三層架構。"
+},
+{
+    "n": 130,
+    "q": "Mia's computer destroyed in fire; IT used backups to restore a fresh laptop (no OS) to old state, automated, quick. Which data recovery method?",
+    "opts": {
+        "A": "System Restore",
+        "B": "Mirroring",
+        "C": "Bare Metal Recovery",
+        "D": "System Image Recovery"
+    },
+    "pdf": "A",
+    "correct": "C",
+    "changed": true,
+    "note": "⚠️ PDF標A錯誤。裸機(無OS無軟體)自動還原到完整狀態 = Bare Metal Recovery。System Restore只還原系統設定，不適用全新裸機。"
+},
+{
+    "n": 131,
+    "q": "Which term refers to any circumstance with the potential to disrupt or degrade the quality of operations or asset?",
+    "opts": {
+        "A": "Threat",
+        "B": "Vulnerability",
+        "C": "Hazard",
+        "D": "Impact"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "具破壞潛力的情況 = Threat。"
+},
+{
+    "n": 132,
+    "q": "Which term refers to a collection of historical records selected for long-term retention and future reference?",
+    "opts": {
+        "A": "Data Archiving",
+        "B": "Data Backup",
+        "C": "Data Deletion",
+        "D": "Data Restore"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "長期保存歷史紀錄 = Data Archiving。"
+},
+{
+    "n": 133,
+    "q": "Which technical process provides additional security to VMs by disabling unnecessary interfaces, devices, ports, and services?",
+    "opts": {
+        "A": "Hardening",
+        "B": "Restriction of Physical Access",
+        "C": "Defense-in-Depth",
+        "D": "Isolation of Security Functions"
+    },
+    "pdf": "B",
+    "correct": "A",
+    "changed": true,
+    "note": "⚠️ PDF標B錯誤。停用不必要介面/埠/服務 = Hardening(強化)的標準定義。Restriction of Physical Access是實體存取限制，與停用服務無關。"
+},
+{
+    "n": 134,
+    "q": "Which virtualization method requires software called containers or virtual engines to run?",
+    "opts": {
+        "A": "Desktop Virtualization",
+        "B": "OS-based Virtualization",
+        "C": "Data Virtualization",
+        "D": "Network Virtualization"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "容器/虛擬引擎 = OS-based(作業系統層)虛擬化。"
+},
+{
+    "n": 135,
+    "q": "Which term refers to the delay experienced by a system while it is serving a request?",
+    "opts": {
+        "A": "Latency",
+        "B": "Nonrepudiation",
+        "C": "Reaction",
+        "D": "Durability"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "服務請求的延遲 = Latency。"
+},
+{
+    "n": 136,
+    "q": "Matt cannot boot Windows Server 2012 after OS update; boot manager files corrupted. Which command in System Recovery?",
+    "opts": {
+        "A": "repadmin /showrepl",
+        "B": "sfc /scannow",
+        "C": "ntdsutil",
+        "D": "Bootrec /RebuildBCD"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "修復開機管理員 = Bootrec /RebuildBCD。"
+},
+{
+    "n": 137,
+    "q": "Employees create individual backups of same data, wasting storage/bandwidth, risk of leak. What can be done?",
+    "opts": {
+        "A": "Data Remanence",
+        "B": "Failover",
+        "C": "Data Erasure",
+        "D": "Deduplication"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "消除重複資料 = Deduplication。"
+},
+{
+    "n": 138,
+    "q": "What is the main objective of a BC test plan?",
+    "opts": {
+        "A": "To demonstrate proficiency in management response and crisis conditions",
+        "B": "Not threaten the normal business operations of an organization",
+        "C": "To diverge from the test storyboard to include unplanned events or circumstances",
+        "D": "To ensure the plan is accurate and relevant under adverse circumstances"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "⚠️爭議題。EDRP官方答案標B(測試不應威脅正常營運)。字面上D更貼近『主要目標』，但官方答案為B，以官方為準。"
+},
+{
+    "n": 139,
+    "q": "When information confidentiality increases in PASIS architecture, what else also increases as a direct result?",
+    "opts": {
+        "A": "Reaction",
+        "B": "Durability",
+        "C": "Latency",
+        "D": "Storage Requirement"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "機密性↑(更多編碼/分片)則儲存需求↑。"
+},
+{
+    "n": 140,
+    "q": "In which scenario training phase is a debrief conducted with participants to obtain more feedback?",
+    "opts": {
+        "A": "Warning Phase",
+        "B": "Execution Phase",
+        "C": "Planning Phase",
+        "D": "Review Phase"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "事後檢討回饋 = Review Phase。"
+},
+{
+    "n": 141,
+    "q": "Which is a virtualization standard specified by the Distributed Management Task Force (DMTF)?",
+    "opts": {
+        "A": "Cloud API",
+        "B": "Open Virtualization Format (OVF)",
+        "C": "Cloud Security Alliance (CSA)",
+        "D": "PCI Data Security Standard (PCI DSS)"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "DMTF 虛擬化標準 = OVF。"
+},
+{
+    "n": 142,
+    "q": "Which refers to a moveable operating environment that can be set up at any place on transportable units?",
+    "opts": {
+        "A": "Colocation Facilities",
+        "B": "Cold Site",
+        "C": "Crisis Command Center",
+        "D": "Mobile Recovery Center"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "可移動的運作環境 = Mobile Recovery Center。"
+},
+{
+    "n": 143,
+    "q": "In which DR tier is data backed up with a hot site?",
+    "opts": {
+        "A": "Tier 2",
+        "B": "Tier 5",
+        "C": "Tier 1",
+        "D": "Tier 4"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "EDRP官方標 Tier 2(熱站備份)。"
+},
+{
+    "n": 144,
+    "q": "Which statement should a DR coordinator interviewee use to get the post?",
+    "opts": {
+        "A": "Day-to-day management control over the execution and maintenance of the disaster recovery program",
+        "B": "Responsible for the specification and design of all technology-based disaster recovery solutions",
+        "C": "Executive authority over the disaster recovery program",
+        "D": "Responsible for disaster recovery planning verification and compliance"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "DR協調者=日常執行與維護管理控制 = A。"
+},
+{
+    "n": 145,
+    "q": "Which layer of the Recovery Management Model provides hassle-free recovery and controls data protection technologies like replication and backup?",
+    "opts": {
+        "A": "Analytics and Reporting Layer",
+        "B": "Protection Technologies Layer",
+        "C": "Testing Simulation Layer",
+        "D": "Common Management Layer"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "統一管理還原與保護技術 = Common Management Layer。"
+},
+{
+    "n": 146,
+    "q": "Remus deleted VM snapshots to free host storage but space wasn't freed. What can he do?",
+    "opts": {
+        "A": "Uninstall the Hypervisor",
+        "B": "Shut down or restart the virtual machine system",
+        "C": "Delete the virtual machine database",
+        "D": "Delete the child disk of the snapshots present in the host machine"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "EDRP官方標 B(重啟VM系統以完成合併釋放空間)。"
+},
+{
+    "n": 147,
+    "q": "James's hard drive irreversibly damaged, data unreadable/inaccessible. What type of data loss?",
+    "opts": {
+        "A": "Logical",
+        "B": "Natural Disaster",
+        "C": "Physical",
+        "D": "Data Corruption"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "硬體實體損壞 = Physical loss。"
+},
+{
+    "n": 148,
+    "q": "Which term refers to a holistic management process identifying potential threats and impacts, providing a framework for organizational resilience?",
+    "opts": {
+        "A": "Business Impact Analysis",
+        "B": "Risk Management",
+        "C": "Business Continuity Management",
+        "D": "Disaster Recovery"
+    },
+    "pdf": "C",
+    "correct": "C",
+    "changed": false,
+    "note": "整體韌性管理框架 = Business Continuity Management(ISO 22301定義)。"
+},
+{
+    "n": 149,
+    "q": "Which term refers to applying strategies to help an organization deal with a sudden and significant undesirable event?",
+    "opts": {
+        "A": "Business Impact Analysis (BIA)",
+        "B": "Application Recovery",
+        "C": "Risk Assessment",
+        "D": "Crisis Management"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "應對突發重大事件 = Crisis Management。"
+},
+{
+    "n": 150,
+    "q": "Which is also known as the doomsday recovery level in 3DR?",
+    "opts": {
+        "A": "Backup of Data",
+        "B": "Archiving of Data",
+        "C": "Local Data Protection",
+        "D": "Remote Backup of Data Protection"
+    },
+    "pdf": "B",
+    "correct": "B",
+    "changed": false,
+    "note": "3DR 最末層(末日復原) = Archiving of Data。"
+},
+{
+    "n": 151,
+    "q": "Which term refers to the practice of bringing systems/applications/data back to 'normal' conditions in a prescribed, acceptable time frame?",
+    "opts": {
+        "A": "Risk Management",
+        "B": "Business Continuity Management (BCM)",
+        "C": "Disaster Recovery Management",
+        "D": "Recovery Management"
+    },
+    "pdf": "D",
+    "correct": "D",
+    "changed": false,
+    "note": "恢復到正常狀態的實務 = Recovery Management。"
+},
+{
+    "n": 152,
+    "q": "Craig can afford a few days' downtime; pre-installs hardware and pre-configures restoration at backup site to meet RTO. Which backup site?",
+    "opts": {
+        "A": "Warm Sites",
+        "B": "Cold Sites",
+        "C": "Hot Sites",
+        "D": "Colocation Facilities"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "預裝硬體、部分配置、數天內可用 = Warm Site。"
+},
+{
+    "n": 153,
+    "q": "Which is NOT a component of BIA?",
+    "opts": {
+        "A": "Safety",
+        "B": "Formation of Committee",
+        "C": "Feedback",
+        "D": "Executive Sponsorship"
+    },
+    "pdf": "A",
+    "correct": "A",
+    "changed": false,
+    "note": "Safety 不屬於 BIA 組成元素。"
+}]
