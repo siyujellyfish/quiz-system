@@ -1,0 +1,8 @@
+[tools]
+node = "24"
+
+[settings]
+experimental = true
+
+[tasks.dev]
+run = "pnpm dev"
