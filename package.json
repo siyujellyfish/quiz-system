@@ -1,6 +1,6 @@
 {
   "name": "quiz-system",
-  "version": "0.1.0-beta.2",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,6 +8,7 @@
     "build": "next build",
     "convert:edrp": "node --experimental-strip-types scripts/convert-edrp-questions.mts",
     "extract:questions": "node --experimental-strip-types scripts/extract-questions.mts",
+    "validate:questions": "node --experimental-strip-types scripts/validate-questions.mts",
     "test": "vitest run",
     "start": "next start",
     "lint": "eslint"

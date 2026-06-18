@@ -90,12 +90,12 @@ backlog/                 Backlog 任務紀錄
 
 ## Release
 
-0.1 beta 使用以下版本與 tag：
+目前版本使用以下版本與 tag：
 
 ```text
-package version: 0.1.0-beta.1
-git tag: v0.1.0-beta.1
-release title: 0.1 beta
+package version: 0.2.1
+git tag: v0.2.1
+release title: v0.2.1
 ```
 
 本專案保留 `private: true`，不發布到 npm。Release 目標是 GitHub repository 與 GitHub release source package。

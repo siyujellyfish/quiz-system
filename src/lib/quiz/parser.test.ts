@@ -48,6 +48,87 @@ describe("parseQuizHtml", () => {
     );
   });
 
+  it("extracts form data when formatted HTML adds whitespace before closing script", () => {
+    const questions = parseQuizHtml(`
+      <div data-item-id="1">
+        <div role="radiogroup" data-value="Beta"></div>
+      </div>
+      <script>
+        var FB_PUBLIC_LOAD_DATA_ = [
+          null,
+          [
+            null,
+            [
+              [
+                1,
+                "Formatted prompt",
+                null,
+                null,
+                [
+                  [
+                    10,
+                    [["Alpha"], ["Beta"], ["Gamma"], ["Delta"]],
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ];
+      </script>
+    `);
+
+    expect(questions).toHaveLength(1);
+    expect(questions[0]?.options.find((option) => option.isCorrect)?.text).toBe(
+      "Beta",
+    );
+  });
+
+  it("uses the correct-answer block instead of the selected wrong answer", () => {
+    const questions = parseQuizHtml(`
+      <div data-item-id="1">
+        <div aria-label="答錯" role="note"></div>
+        <div role="radiogroup" data-value="Selected wrong">
+          <div role="radio" data-value="Selected wrong" aria-checked="true"></div>
+          <div role="radio" data-value="Actual correct" aria-checked="false"></div>
+          <div role="radio" data-value="Other A" aria-checked="false"></div>
+          <div role="radio" data-value="Other B" aria-checked="false"></div>
+        </div>
+        <div>
+          <div role="heading" aria-level="3">正確答案</div>
+          <div role="radio" data-value="Actual correct" aria-checked="true"></div>
+        </div>
+      </div>
+      <script>
+        var FB_PUBLIC_LOAD_DATA_ = [
+          null,
+          [
+            null,
+            [
+              [
+                1,
+                "Formatted prompt",
+                null,
+                null,
+                [
+                  [
+                    10,
+                    [["Selected wrong"], ["Actual correct"], ["Other A"], ["Other B"]],
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ];
+      </script>
+    `);
+
+    expect(questions[0]?.options.find((option) => option.isCorrect)?.text).toBe(
+      "Actual correct",
+    );
+  });
+
   it("extracts 88 CTIA questions and skips the Google Forms description item", () => {
     const questions = parseQuizHtml(ctiaSourceHtml);
 
@@ -73,7 +154,7 @@ describe("parseQuizHtml", () => {
 
     expect(question?.prompt).toMatch(/^41\./);
     expect(question?.options.find((option) => option.isCorrect)?.text).toBe(
-      "Network interface card (NIC)",
+      "Gateway",
     );
   });
 

@@ -28,7 +28,7 @@ type GoogleQuestion = [
   ...unknown[],
 ];
 
-const formDataPattern = /var FB_PUBLIC_LOAD_DATA_ = (.*?);<\/script>/s;
+const formDataPattern = /var\s+FB_PUBLIC_LOAD_DATA_\s*=\s*(.*?);\s*<\/script>/s;
 
 export function parseQuizHtml(html: string): ParsedQuizQuestion[] {
   const match = html.match(formDataPattern);
@@ -95,10 +95,16 @@ function getGoogleQuestions(data: unknown): GoogleQuestion[] {
 function getCorrectAnswersFromScoreHtml(html: string): Map<string, string> {
   const correctAnswers = new Map<string, string>();
   const pattern =
-    /data-item-id="(\d+)"(?:(?!data-item-id=").)*?role="radiogroup"[^>]*data-value="([^"]*)"/gs;
+    /data-item-id="(\d+)"([\s\S]*?)(?=data-item-id="\d+"|var\s+FB_PUBLIC_LOAD_DATA_|<\/body>)/g;
 
   for (const match of html.matchAll(pattern)) {
-    correctAnswers.set(match[1], decodeText(match[2]));
+    const itemId = match[1];
+    const itemHtml = match[2];
+    const correctAnswer = getCorrectAnswerFromItemHtml(itemHtml);
+
+    if (correctAnswer) {
+      correctAnswers.set(itemId, correctAnswer);
+    }
   }
 
   if (correctAnswers.size === 0) {
@@ -106,6 +112,22 @@ function getCorrectAnswersFromScoreHtml(html: string): Map<string, string> {
   }
 
   return correctAnswers;
+}
+
+function getCorrectAnswerFromItemHtml(itemHtml: string): string | undefined {
+  const explicitCorrectAnswer = itemHtml.match(
+    /正確答案[\s\S]*?data-value="([^"]+)"/,
+  );
+
+  if (explicitCorrectAnswer) {
+    return decodeText(explicitCorrectAnswer[1]);
+  }
+
+  const selectedAnswer = itemHtml.match(
+    /role="radiogroup"[^>]*data-value="([^"]*)"/,
+  );
+
+  return selectedAnswer ? decodeText(selectedAnswer[1]) : undefined;
 }
 
 function hasOptions(question: GoogleQuestion): boolean {

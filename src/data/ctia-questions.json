@@ -63,7 +63,7 @@
       {
         "id": "1843470821-1",
         "text": "Distributed Denial-of-Service (DDoS) attack",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1843470821-2",
@@ -73,7 +73,7 @@
       {
         "id": "1843470821-3",
         "text": "Bandwidth attack",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -115,12 +115,12 @@
       {
         "id": "1420421641-1",
         "text": "Identifying areas of further improvement",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1420421641-2",
         "text": "Conducting a gap analysis",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1420421641-3",
@@ -193,12 +193,12 @@
       {
         "id": "249131570-1",
         "text": "Scoring",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "249131570-2",
         "text": "Workflow",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "249131570-3",
@@ -323,12 +323,12 @@
       {
         "id": "705375599-1",
         "text": "Protection ranking",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "705375599-2",
         "text": "Data management",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "705375599-3",
@@ -526,12 +526,12 @@
       {
         "id": "698728315-0",
         "text": "Risk prioritization",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "698728315-1",
         "text": "Risk identification",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "698728315-2",
@@ -692,12 +692,12 @@
       {
         "id": "1264227482-2",
         "text": "CSV data feeds",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1264227482-3",
         "text": "Proactive surveillance feeds",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -734,7 +734,7 @@
       {
         "id": "1986322139-0",
         "text": "Planning and direction",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1986322139-1",
@@ -749,7 +749,7 @@
       {
         "id": "1986322139-3",
         "text": "Processing and exploitation",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -765,7 +765,7 @@
       {
         "id": "1700417191-1",
         "text": "Impersonation",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1700417191-2",
@@ -775,7 +775,7 @@
       {
         "id": "1700417191-3",
         "text": "Shoulder surfing",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -895,7 +895,7 @@
       {
         "id": "929766527-1",
         "text": "Unstructured form",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "929766527-2",
@@ -905,7 +905,7 @@
       {
         "id": "929766527-3",
         "text": "Hybrid form",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -952,12 +952,12 @@
       {
         "id": "735523948-2",
         "text": "Sharing technical threat intelligence",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "735523948-3",
         "text": "Sharing tactical threat intelligence",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -1020,7 +1020,7 @@
       {
         "id": "406877892-0",
         "text": "Sam did not use the proper standardization formats for representing threat data.",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "406877892-1",
@@ -1030,7 +1030,7 @@
       {
         "id": "406877892-2",
         "text": "Sam used unreliable intelligence sources.",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "406877892-3",
@@ -1046,7 +1046,7 @@
       {
         "id": "803033495-0",
         "text": "Network interface card (NIC)",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "803033495-1",
@@ -1061,7 +1061,7 @@
       {
         "id": "803033495-3",
         "text": "Gateway",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -1072,12 +1072,12 @@
       {
         "id": "932165583-0",
         "text": "Expansion",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "932165583-1",
         "text": "Persistence",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "932165583-2",
@@ -1098,7 +1098,7 @@
       {
         "id": "1683148314-0",
         "text": "Identification",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1683148314-1",
@@ -1113,7 +1113,7 @@
       {
         "id": "1683148314-3",
         "text": "Eradication",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -1212,12 +1212,12 @@
       {
         "id": "1598304843-2",
         "text": "Reinforcement learning",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1598304843-3",
         "text": "Semi-supervised learning",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -1254,7 +1254,7 @@
       {
         "id": "1767419560-0",
         "text": "Providers of threat data feeds",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1767419560-1",
@@ -1264,7 +1264,7 @@
       {
         "id": "1767419560-2",
         "text": "Providers of comprehensive cyber-threat intelligence",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1767419560-3",
@@ -1467,12 +1467,12 @@
       {
         "id": "1027647045-1",
         "text": "The right content",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1027647045-2",
         "text": "The right presentation",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1027647045-3",
@@ -1519,7 +1519,7 @@
       {
         "id": "1691150697-1",
         "text": "Produce actionable data",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1691150697-2",
@@ -1529,7 +1529,7 @@
       {
         "id": "1691150697-3",
         "text": "Understand frequency and impact of a threat",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -1576,12 +1576,12 @@
       {
         "id": "1560249856-2",
         "text": "CHIS",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1560249856-3",
         "text": "FININT",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -1649,7 +1649,7 @@
       {
         "id": "313162358-1",
         "text": "Social network settings",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "313162358-2",
@@ -1659,7 +1659,7 @@
       {
         "id": "313162358-3",
         "text": "Hacking forums",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -1805,7 +1805,7 @@
       {
         "id": "1094837170-1",
         "text": "Report findings and recommendations",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": "1094837170-2",
@@ -1815,7 +1815,7 @@
       {
         "id": "1094837170-3",
         "text": "Conduct a gap analysis",
-        "isCorrect": true
+        "isCorrect": false
       }
     ]
   },
@@ -1956,7 +1956,7 @@
       {
         "id": "1197270841-0",
         "text": "Workflow",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1197270841-1",
@@ -1971,7 +1971,7 @@
       {
         "id": "1197270841-3",
         "text": "Scoring",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
@@ -2268,7 +2268,7 @@
       {
         "id": "1305908142-0",
         "text": "White",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "1305908142-1",
@@ -2283,7 +2283,7 @@
       {
         "id": "1305908142-3",
         "text": "Green",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   }
